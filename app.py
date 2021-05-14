@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 13 13:15:29 2021
-
-@author: Purav
-"""
-
-
 from flask import Flask
 from flask import render_template
 from flask import Response
@@ -18,8 +10,8 @@ from tensorflow.keras.models import load_model
 
 
 # load our serialized face detector model from disk
-prototxtPath = r"/app/.apt/usr/bin/face_detector/deploy.prototxt"
-weightsPath = r"/app/.apt/usr/bin/face_detector/res10_300x300_ssd_iter_140000.caffemodel"
+prototxtPath = "\app\.apt\usr\bin\face_detector\deploy.prototxt"
+weightsPath = "\app\.apt\usr\bin\face_detector\res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 # load the face mask detector model from disk
