@@ -23,7 +23,7 @@ Markdown==3.3.4
 MarkupSafe==2.0.0
 numpy==1.19.5
 oauthlib==3.1.0
-opencv
+opencv-python
 opt-einsum==3.3.0
 protobuf==3.17.0
 pyasn1==0.4.8
