@@ -91,7 +91,7 @@ def gen_frames():
 	# grab the frame from the threaded video stream and resize it
 	# to have a maximum width of 400 pixels
     success,frame = camera.read()
-    frame = cv2.resize(frame,(640,480))
+    frame = cv2.resize(frame,(224,224),fx=0,fy=0, interpolation = cv2.INTER_CUBIC)
 
 	# detect faces in the frame and determine if they are wearing a
 	# face mask or not
