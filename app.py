@@ -19,6 +19,7 @@ maskNet = load_model("mask_detector.model")
 
 app = Flask(__name__)
 camera = cv2.VideoCapture(0)
+print("camera::",camera.isOpened())
 
 @app.route("/")
 def index():
